@@ -1,17 +1,77 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>区块链技术学习平台</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>区块链技术学习平台</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#basics">区块链基础</a></li>
+                <li><a href="#ide">在线IDE</a></li>
+                <li><a href="#resources">学习资源</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h2>欢迎来到区块链技术学习平台</h2>
+            <p>在这里，您可以学习区块链基础知识，使用在线IDE编写智能合约，获取最新的学习资源。</p>
+            <button>开始学习</button>
+        </section>
+
+        <section id="basics" class="content">
+            <h2>区块链基础</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>什么是区块链</h3>
+                    <p>区块链是一种分布式账本技术，通过去中心化和加密技术确保数据的安全性和不可篡改性。</p>
+                </div>
+                <div class="card">
+                    <h3>区块链原理</h3>
+                    <p>了解区块链的核心原理，包括哈希算法、共识机制、智能合约等关键概念。</p>
+                </div>
+                <div class="card">
+                    <h3>区块链应用</h3>
+                    <p>探索区块链在金融、供应链、医疗、投票等领域的实际应用案例。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ide" class="content">
+            <h2>在线IDE</h2>
+            <p>使用我们的在线IDE编写和测试智能合约代码。</p>
+            <div class="ide-container">
+                <textarea placeholder="在此编写智能合约代码..."></textarea>
+                <button>运行</button>
+                <div class="output">
+                    <h4>输出结果：</h4>
+                    <div id="output-content"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="content">
+            <h2>学习资源</h2>
+            <ul class="resource-list">
+                <li><a href="#">区块链技术白皮书</a></li>
+                <li><a href="#">智能合约开发教程</a></li>
+                <li><a href="#">区块链架构设计</a></li>
+                <li><a href="#">区块链安全最佳实践</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 区块链技术学习平台. 保留所有权利.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
